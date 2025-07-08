@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dif Walid – Copywriter Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Lightbox Zoom Effect */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.lightbox:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #ffb3ff;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 2.5rem;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0 12px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.lightbox .close:hover {
+  background: #ffb3ff;
+  color: #000;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="glow">Dif Walid</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Portfolio</a>
+      <a href="#gallery">Samples</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2 class="glow">Words that Sell. Stories that Resonate.</h2>
+    <p>Copywriter | Brand Strategist | E-commerce Wordsmith</p>
+    <a href="#projects" class="btn">Discover My Work</a>
+  </section>
+
+  <section id="about" class="glass">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate copywriter with a sharp focus on crafting persuasive content that converts.
+      Whether it's product descriptions, landing pages, ads, or brand storytelling, I turn ideas into irresistible copy.
+      My goal? Help your business communicate clearly, emotionally, and powerfully — with results.
+    </p>
+  </section>
+
+  <section id="skills" class="glass">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Sales-Driven Copywriting</li>
+      <li>Product Descriptions</li>
+      <li>Landing Pages & Funnels</li>
+      <li>Email Marketing</li>
+      <li>Ad Copy (Facebook/Google)</li>
+      <li>SEO Copywriting</li>
+      <li>Brand Voice & Tone</li>
+      <li>Content Strategy</li>
+      <li>E-commerce Copy</li>
+      <li>UX Writing</li>
+      <li>Storytelling</li>
+      <li>Bilingual: French & English</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="glass">
+    <h2 class="glow">Portfolio</h2>
+    <div class="project-container">
+      <div class="card animated-card">
+        <h3>Beauty Product Page – VIT C+E</h3>
+        <p>Full product page copy that highlights benefits, customer testimonials, and persuasive CTA.</p>
+      </div>
+      <div class="card animated-card">
+        <h3>Luxury Fashion Copy – Chevron Paris</h3>
+        <p>Refined product storytelling for high-end handbags using emotional and elegant tone.</p>
+      </div>
+      <div class="card animated-card">
+        <h3>Fitness Product – Planche du Guerrier</h3>
+        <p>Dynamic product copy focused on transformation, motivation, and feature breakdown.</p>
+      </div>
+    </div>
+  </section>
+
+<section id="gallery" class="glass gallery">
+  <h2>Visual Samples</h2>
+  <div class="images">
+    <a href="#img1">
+      <img src="IMG-20250702-WA0004.jpg" alt="Copy for skincare product" class="hover-image" />
+    </a>
+    <a href="#img2">
+      <img src="Screenshot_2025-07-02-14-41-09-706_com.android.chrome.jpg" alt="Copy for fashion product" class="hover-image" />
+    </a>
+    <a href="#img3">
+      <img src="IMG-20250702-WA0003.jpg" alt="Copy for fitness product" class="hover-image" />
+    </a>
+  </div>
+
+  <!-- Lightbox modals -->
+  <div class="lightbox" id="img1">
+    <a href="#gallery" class="close">×</a>
+    <img src="IMG-20250702-WA0004.jpg" alt="Zoomed image 1">
+  </div>
+  <div class="lightbox" id="img2">
+    <a href="#gallery" class="close">×</a>
+    <img src="Screenshot_2025-07-02-14-41-09-706_com.android.chrome.jpg" alt="Zoomed image 2">
+  </div>
+  <div class="lightbox" id="img3">
+    <a href="#gallery" class="close">×</a>
+    <img src="IMG-20250702-WA0003.jpg" alt="Zoomed image 3">
+  </div>
+</section>
+
+
+  <footer class="glass">
+    <p>📧 Contact: dif.walid@example.com</p>
+  </footer>
+</body>
+</html>
